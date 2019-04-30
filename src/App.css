@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .App {
+        width: 50%;
+        margin: auto;
+    }
+}
