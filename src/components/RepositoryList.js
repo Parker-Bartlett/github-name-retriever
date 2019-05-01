@@ -6,7 +6,7 @@ class Search extends Component {
   render() {
     return (
       <div style={repoList}>
-        <h3>Public Repositories Retrieved: {this.props.repos.length}</h3>
+        <h3 data-testid="header">Public Repositories Retrieved: {this.props.repos.length}</h3>
         <ul>
           {this.props.repos.map(repo => (
             <Repository key={repo.id} repo={repo} />

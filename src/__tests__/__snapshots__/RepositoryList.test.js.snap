@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepositoryList> With Repos 1`] = `
+<div
+  style="margin: 10px auto; padding: 10px; width: 90%; text-align: center; background-color: rgba(0, 0, 0, 0.1); border: 1px solid black;"
+>
+  <h3
+    data-testid="header"
+  >
+    Public Repositories Retrieved: 
+    3
+  </h3>
+  <ul>
+    <div>
+      <li
+        data-testid="list-item"
+        style="list-style-type: none; padding: 5px; display: flex; justify-content: space-between;"
+      >
+        <a
+          data-testid="repo-link"
+          target="blank"
+        />
+        <p
+          data-testid="watchers"
+        >
+          Watchers: 
+        </p>
+      </li>
+    </div>
+    <div>
+      <li
+        data-testid="list-item"
+        style="list-style-type: none; padding: 5px; display: flex; justify-content: space-between;"
+      >
+        <a
+          data-testid="repo-link"
+          target="blank"
+        />
+        <p
+          data-testid="watchers"
+        >
+          Watchers: 
+        </p>
+      </li>
+    </div>
+    <div>
+      <li
+        data-testid="list-item"
+        style="list-style-type: none; padding: 5px; display: flex; justify-content: space-between;"
+      >
+        <a
+          data-testid="repo-link"
+          target="blank"
+        />
+        <p
+          data-testid="watchers"
+        >
+          Watchers: 
+        </p>
+      </li>
+    </div>
+  </ul>
+</div>
+`;
