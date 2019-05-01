@@ -15,15 +15,17 @@ export class Search extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit} style={formStyle}>
+      <form data-testid="form" onSubmit={this.onSubmit} style={formStyle}>
           <input 
+            data-testid="input"
             type="text" 
             name="title" 
             placeholder="Search Orginization..." 
-            value={this.state.orginization}
+            //value={this.state.orginization}
             onChange={this.onChange} 
             style={searchBarStyle}/>
-          <input 
+          <input
+            data-testid="button" 
             type="submit" 
             value="Get Repos"
             style={buttonStyle}/>

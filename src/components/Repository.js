@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
 
-export class Repository extends Component {
-  render() {
-    return (
-      <div>
-        <li style={repo}>
-          <a target='blank' href={this.props.repo.html_url}>{this.props.repo.name}</a>
-          <p>Watchers: {this.props.repo.watchers}</p>
-        </li>
-      </div>
-    )
-  }
-}
+export const Repository = ({ repo }) => {
+  // Is it necessary to test for errors?
+  //if(!repo) return console.error;
+  return (
+    <div>
+      <li style={repoStyle} data-testid="list-item">
+        <a data-testid="repo-link" target='blank' href={repo.html_url}>{repo.name}</a>
+        <p data-testid="watchers">Watchers: {repo.watchers}</p>
+      </li>
+    </div>
+  );
+};
 
-const repo = {
+
+const repoStyle = {
     listStyleType: 'none',
     padding: '5px',
     display: 'flex',
